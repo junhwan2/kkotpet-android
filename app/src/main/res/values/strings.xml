@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">꽃보다펫</string>
+
+    <string name="kakao_app_key">046dddc0c663bf0157e34af5460c81e3</string>
+    <string name="kakao_scheme">kakao046dddc0c663bf0157e34af5460c81e3</string>
+    <string name="kakaolink_host">kakaolink</string>
+
+    <string name="facebook_app_id">196323764398031</string>
+    <string name="fb_login_protocol_scheme">fb196323764398031</string>
+
+    <string name="naver_client_id">xglBishpR9GIjQJPK71J</string>
+    <string name="naver_client_secret">_vWxyx4pZv</string>
+
+    <string name="payco_service_provider_code">FRIENDS</string>
+    <string name="payco_client_id">3RDfejEvqqYG2loqGr4l</string>
+    <string name="payco_client_secret">lEdAnBnqxeBD6Dz2kpGhnr7p</string>
+
+    <string name="title_notice">알림</string>
+    <string name="title_facebook_share">페이스북 공유하기</string>
+    <string name="title_phone_auth">휴대폰 인증</string>
+    <string name="title_pay">결제</string>
+
+    <string name="app_finish_msg">\'이전\' 버튼을 한번 더 누르면 종료됩니다.</string>
+    <string name="btn_start">시작하기</string>
+    <string name="permission_common_app_exit_deny">App 실행을 위한 권한 요청이 거부되었습니다.\nApp 을 종료합니다.</string>
+
+    <string name="title_setting">접근권한 설정</string>
+    <string name="setting_location">위치정보</string>
+
+    <string name="alert_setting_location">권한 설정은 애플리케이션 권한 설청 화면에서만 가능합니다. 설정 화면으로 이동하시겠습니까?</string>
+
+    <string name="login_msg">로그인 되었습니다.</string>
+    <string name="logout_msg">로그아웃 되었습니다.</string>
+    <string name="cancel_msg">취소 되었습니다.</string>
+
+</resources>

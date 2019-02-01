@@ -1,0 +1,75 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "kr.co.ibks.platformteam.android.kkotpet"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "0.9.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        debug {
+//            signingConfig signingConfigs.debug
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        release {
+//            signingConfig signingConfigs.release
+            debuggable false
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+//    signingConfigs {
+//        debug {
+//            storeFile file('ibks_platform.jks')
+//            storePassword 'ibks0901!'
+//            keyAlias 'ibks_platform'
+//            keyPassword 'ibks0901!'
+//        }
+//
+//        release {
+//            storeFile file('ibks_platform.jks')
+//            storePassword 'ibks0901!'
+//            keyAlias 'ibks_platform'
+//            keyPassword 'ibks0901!'
+//        }
+//    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:26.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    // Glide
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+
+    // Permission
+    implementation 'com.karumi:dexter:5.0.0'
+
+    // Butterknife
+    implementation 'com.jakewharton:butterknife:8.6.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'
+
+    // Naver 로그인
+    implementation files('libs/naveridlogin_android_sdk_4.2.0.aar')
+    // Kakao 로그인
+    implementation group: project.KAKAO_SDK_GROUP, name: 'usermgmt', version: project.KAKAO_SDK_VERSION
+    implementation group: project.KAKAO_SDK_GROUP, name: 'kakaolink', version: project.KAKAO_SDK_VERSION
+    // Facebook 로그인
+    implementation 'com.facebook.android:facebook-android-sdk:4.26.0'
+    // Payco 로그인
+    implementation files('libs/paycologin-1.3.4.aar')
+    implementation 'com.google.code.gson:gson:2.7'
+    implementation 'com.google.android.gms:play-services-ads:9.4.0'
+}
